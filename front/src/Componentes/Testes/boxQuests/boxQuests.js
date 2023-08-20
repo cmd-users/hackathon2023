@@ -7,7 +7,7 @@ export default function BoxQuests({ menu }) {
 
     useEffect(() => {
         if (answered > 9) {
-            fetch('http://localhost:8080/coffees') // URL da API
+            fetch('http://localhost:8000/quiz/next') // URL da API
                 .then(response => response.json())
                 .then(estiloaprendizagem => setEstiloAprendizagem(estiloaprendizagem))
                 .catch(error => console.error('Error fetching data:', error));
@@ -30,8 +30,9 @@ export default function BoxQuests({ menu }) {
     } else {
         return (
             <div>
-                <p>Pergunta {answered + 1}</p>
+                <h2>Pergunta {answered + 1}</h2>
                 <button onClick={() => setAnswered(answered + 1)}>Responder</button>
+                <h3>Questão {answered + 1} de 10</h3>
             </div>
         );
     }
