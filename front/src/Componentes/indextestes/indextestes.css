@@ -1,0 +1,96 @@
+:root {
+    --viewport-width: 10vw;
+    --viewport-height: 20vh;
+    --colorBtnrealizar: #CA166E;
+
+  }
+  
+
+.component-body{
+    display: flex;
+    justify-content:space-between;
+    flex-direction: column;
+    align-content: center;
+    height: 100%;
+    align-items: center;
+
+}
+
+.iconeCaderno {
+      /* Aqui está a definição da classe que você forneceu */
+      background-image: url("data:image/svg+xml;charset=utf8,%3C?xml version='1.0' encoding='UTF-8' standalone='no'?%3E%3C!DOCTYPE svg PUBLIC '-//W3C//DTD SVG 1.1//EN' 'http://www.w3.org/Graphics/SVG/1.1/DTD/svg11.dtd'%3E%3Csvg version='1.1' id='Layer_1' xmlns='http://www.w3.org/2000/svg' xmlns:xlink='http://www.w3.org/1999/xlink' x='0px' y='0px' width='64px' height='64px' viewBox='0 0 64 64' enable-background='new 0 0 64 64' xml:space='preserve'%3E%3Cimage id='image0' width='64' height='64' x='0' y='0' href='data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAEAAAABACAMAAACdt4HsAAAABGdBTUEAALGPC/xhBQAAACBjSFJN AAB6JgAAgIQAAPoAAACA6AAAdTAAAOpgAAA6mAAAF3CculE8AAAAWlBMVEUAAACMaZ6MbJ6Na5+N bJ+MbJ9/f6qMa5+Na56Ma56MbZ6Map2Na56NbJ+qjKjlzLvv2L7YvrbkzLqkhqekhqajhKb6796j habYvreWdqLUr5PvyI7YspL///9+y/kDAAAADXRSTlMAHazy5YgG7YnmOjyHz2VE4QAAAAFiS0dE HesDcZEAAAAJcEhZcwAACxMAAAsTAQCanBgAAAAHdElNRQfnCBQCMgTBB06VAAABEUlEQVRYw+2X Ww+CMAyFETa8YBUteOX//06D00Rot7QsxBvnYU/rl/T0rMmSZFJXszQDiYzN+fq5qLyVZQEpbLal RDswLCCDvai+LAFYAICwfhRAvlg6e3AgwD79rQYCDKziWjBQxAFcC6+XahofDABya3oALoCqMQIc ehoXQHOgBNAcKAE0B2pAEQegOdCayOQgeoyRQTrS+irUwrQPfPsAO3tBtw/w4QjKpkDHqGwhGkBz QHYiBgE0B9gHVEHAx+aAdUCTA9aBr8nBIBN/bB9oTSQ5UALcGNsR1ILDC4A7XXCMBmhDgILj7W/h 5AWcxT8On4mxgMtVJg/AQCOrbzxfHivvYM0C3HsQyPft+1PdAFWTnDzcC1OtAAAAJXRFWHRkYXRl OmNyZWF0ZQAyMDIzLTA4LTIwVDAwOjUwOjA0KzAyOjAwx2gGKgAAACV0RVh0ZGF0ZTptb2RpZnkA MjAyMy0wOC0yMFQwMDo1MDowNCswMjowMLY1vpYAAAAASUVORK5CYII=' /%3E%3C/svg%3E");
+      width: 64px;
+      height: 64px;
+    }
+
+.colunas{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    height: 100%; /* Ensure the column takes up the full height */
+}
+
+.colunas ul {
+  padding: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%; /* Ensure the list takes up the full height */
+}
+
+.colunas p {
+    margin: 0; /* Remove default margin from paragraphs */
+  }
+
+  .colunas li {
+    margin: 10px 0; /* Adjust the margin between list items */
+  }
+
+.linhas{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+}
+
+button{
+    border: none; /* Remove a borda */
+    background-color: transparent; /* Torna o fundo transparente */
+    transition-duration: 0.4s;
+}
+
+.Btnteste{
+    background-color: var(--colorBtnrealizare);
+}
+
+.porQue{
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.motivos{
+    color: #000;
+    font-family: Red Hat Text;
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.outTeste{
+    color: #000;
+    text-align: center;
+    font-family: Red Hat Text;
+    font-size: 50px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}

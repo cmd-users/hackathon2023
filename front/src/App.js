@@ -1,13 +1,21 @@
+import React, { useState } from 'react'; // Importe useState aqui
 import './App.css';
-import Header from './Componentes/header/heder';
+import HeaderMenu from './Componentes/header/heder';
+import IndexTestes from './Componentes/indextestes/indextestes';
+import Testes from './Componentes/Testes/teste'; // Importe o componente Testes aqui
 
 function App() {
+  let [showTeste, setShowTeste] = useState(false); // Declare o estado showTeste
+
+  const toggleShowTeste = () => {
+    setShowTeste(!showTeste);
+  };
+
   return (
     <div className="App">
-      <script src="https://unpkg.com/htmx.org@1.9.4"></script>
-        <Header/>
+      <HeaderMenu />
       <body>
-        <div>corpo aqui</div>
+        {showTeste ? <Testes /> : <IndexTestes toggleTeste={toggleShowTeste}/>} {/* Renderização condicional corrigida */}
       </body>
     </div>
   );
