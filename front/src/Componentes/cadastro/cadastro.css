@@ -1,0 +1,31 @@
+.body {
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+.container-cadastro {
+    width: 100vw;
+    justify-content: center;
+    display: flex;
+}
+
+.component-cadastro {
+    margin-top: 10px;
+    padding: 25px;
+    width: 30vw;
+    box-sizing: border-box;
+    background-color: #B4D9F0;
+    align-items: center;
+}
+
+.component-checkbox {
+    display: flex;
+    box-sizing:content-box;
+    margin: auto;
+}
+
+#input {
+    width: 25vw;
+    height: auto;
+}
