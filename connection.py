@@ -1,22 +1,18 @@
-from mysql.connector import connect
+import psycopg2
 
 class Connection:
-    host:str
-    user:str
-    passwd:str
-    database:str
 
-    def __init__(self, host:str, user:str, passwd:str, database:str):
+    def __init__(self, host = "admin", user = "admin", password = "admin123", database = "hackathonQUERO"):
         self.host = host
         self.user = user
-        self.passwd = passwd
+        self.password = password
         self.database = database
 
     def get_connection(self):
-        connection = connect(
-            host = self.host,
-            user = self.user,
-            passwd = self.passwd,
-            database = self.database
+        connection = psycopg2.connect(
+            host=self.host,
+            user=self.user,
+            password=self.password,
+            dbname=self.database
         )
         return connection
