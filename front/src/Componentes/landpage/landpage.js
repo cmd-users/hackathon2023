@@ -1,10 +1,10 @@
 import React from 'react';
-import './indextestes.css';
+import './landpage.css';
 
-export default function IndexTestes({toggleTeste}) {
+export default function Landpage({toggleTeste}) {
 
     let testeresult = false;
-    let outputteste
+    let outputteste;
 
     if(testeresult){
         outputteste = "Parece que você já realizou esse teste"

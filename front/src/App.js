@@ -1,7 +1,7 @@
 import React, { useState } from 'react'; // Importe useState aqui
 import './App.css';
 import HeaderMenu from './Componentes/header/heder';
-import IndexTestes from './Componentes/indextestes/indextestes';
+import Landpage from './Componentes/landpage/landpage';
 import Testes from './Componentes/Testes/teste'; // Importe o componente Testes aqui
 
 function App() {
@@ -11,11 +11,16 @@ function App() {
     setShowTeste(!showTeste);
   };
 
+  const handleToggleTeste = (menuState) => {
+    setShowTeste(menuState);
+};
+
   return (
+
     <div className="App">
       <HeaderMenu />
       <body>
-        {showTeste ? <Testes /> : <IndexTestes toggleTeste={toggleShowTeste}/>} {/* Renderização condicional corrigida */}
+        {showTeste ? <Testes toggleTeste={handleToggleTeste} menu={toggleShowTeste} /> : <Landpage toggleTeste={toggleShowTeste}/>} {/* Renderização condicional corrigida */}
       </body>
     </div>
   );
